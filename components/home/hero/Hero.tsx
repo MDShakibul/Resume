@@ -78,7 +78,7 @@ export const Hero = () => {
             className={styles.profile}
             src={Profile}
             priority
-            alt="John Carlo Devera | Frontend Developer"
+            alt="Shakibul Islam | Full Stack Developer"
             width={250}
             height={300}
           />
