@@ -40,8 +40,8 @@ export const ExperienceItem = ({
       <Reveal>
         <>
         {/* <p className={styles.description}>{description}</p> */}
-        {description.map((item) => (
-            <li className={styles.description}>{item}</li> 
+        {description.map((item, index) => (
+            <li key={index} className={styles.description}>{item}</li> 
           ))}
           </>
       </Reveal>

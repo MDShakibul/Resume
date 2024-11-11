@@ -165,7 +165,7 @@ const projects = [
         Built with a MERN stack (MongoDB, Express.js, React, Node.js), using Styled Components and Tailwind for styling, creating a visually engaging and responsive user experience.
       </p>
       <p>
-        This project enabled me to work with MongoDB for database management, and Express.js for server-side functionality, enhancing the platform's scalability and efficiency.
+        This project enabled me to work with MongoDB for database management, and Express.js for server-side functionality, enhancing the platform&apos;s scalability and efficiency.
       </p>
 			</>
 		),
