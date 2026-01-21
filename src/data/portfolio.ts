@@ -61,29 +61,36 @@ export const skills = {
 
 export const projects = [
   {
+    title: "Oskies",
+    description: "An official pet food website for Oskies in Bangladesh where customers can browse kitten/adult cat food products, check prices, find shop locations, and order online with secure payments.",
+    technologies: ["Next.js", "Express.js", "GraphQL", "Ant Design", "Tailwind CSS"],
+    links: {
+      client: "https://www.oskiesbd.com/",
+    },
+  },
+  {
     title: "USDT Live Stack",
     description: "A blockchain-based cryptocurrency staking platform with MetaMask integration for secure transactions.",
     technologies: ["React", "Node.js", "Blockchain", "MetaMask"],
     links: {
-      client: "#",
+      client: "https://github.com/MDShakibul/web3",
     },
   },
   {
-    title: "Online Motors",
-    description: "A comprehensive vehicle marketplace with advanced search, filtering, and secure user authentication.",
-    technologies: ["React.js", "Express.js", "MongoDB", "Tailwind CSS", "Firebase"],
+    title: "Mojaru Education Platform",
+    description: "An E-learning platform designed to provide accessible and engaging educational content like online class, online exam, online attendance",
+    technologies: ["React.js", "Laravel", "My SQL", "Bootstrap", "Zoom API"],
     links: {
-      client: "#",
-      server: "#",
+      client: "https://mojaru.com/bn",
     },
   },
   {
-    title: "Book Store",
+    title: "Headphone E-commerce Store",
     description: "Modern e-commerce bookstore with Redux state management and clean UI built with Shadcn/ui.",
-    technologies: ["React.js", "Redux", "Express.js", "Mongoose", "Shadcn/ui"],
+    technologies: ["React.js", "Tailwind CSS", "Framer Motion",],
     links: {
-      client: "#",
-      server: "#",
+      client: "https://headphone-tcj.netlify.app/",
+      server: "https://github.com/MDShakibul/headphone-shop",
     },
   },
 ];

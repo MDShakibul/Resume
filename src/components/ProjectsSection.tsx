@@ -3,6 +3,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { projects } from "@/data/portfolio";
 import { ExternalLink, Github, Folder } from "lucide-react";
+import { personalInfo } from "@/data/portfolio";
 
 const ProjectsSection = () => {
   const ref = useRef(null);
@@ -91,7 +92,7 @@ const ProjectsSection = () => {
         transition={{ delay: 0.6 }}
       >
         <a
-          href="https://github.com/shakibul-islam"
+          href={personalInfo.github}
           target="_blank"
           rel="noopener noreferrer"
           className="btn-outline inline-flex items-center gap-2"
