@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Dark theme - deep navy developer aesthetic */
+    --background: 222 47% 8%;
+    --foreground: 210 40% 96%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 96%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 96%;
+
+    /* Cyan/Teal accent - tech-forward feel */
+    --primary: 174 72% 56%;
+    --primary-foreground: 222 47% 8%;
+
+    --secondary: 222 30% 18%;
+    --secondary-foreground: 210 40% 96%;
+
+    --muted: 222 30% 14%;
+    --muted-foreground: 215 20% 55%;
+
+    --accent: 174 72% 56%;
+    --accent-foreground: 222 47% 8%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 222 30% 18%;
+    --input: 222 30% 18%;
+    --ring: 174 72% 56%;
+
+    --radius: 0.75rem;
+
+    /* Custom portfolio tokens */
+    --glow: 174 72% 56%;
+    --navy-dark: 222 47% 5%;
+    --navy-light: 222 30% 20%;
+    --slate: 215 20% 65%;
+    --highlight: 174 100% 70%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(174, 72%, 56%), hsl(190, 80%, 50%));
+    --gradient-card: linear-gradient(145deg, hsl(222, 47%, 12%), hsl(222, 47%, 9%));
+    --gradient-text: linear-gradient(90deg, hsl(174, 72%, 56%), hsl(190, 80%, 60%));
+    
+    /* Shadows */
+    --shadow-glow: 0 0 30px hsl(174 72% 56% / 0.15);
+    --shadow-card: 0 10px 40px hsl(222 47% 5% / 0.5);
+
+    --sidebar-background: 222 47% 8%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 174 72% 56%;
+    --sidebar-primary-foreground: 222 47% 8%;
+    --sidebar-accent: 222 30% 14%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 222 30% 18%;
+    --sidebar-ring: 174 72% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-text);
+  }
+
+  .glow-text {
+    text-shadow: 0 0 20px hsl(var(--glow) / 0.5);
+  }
+
+  .card-gradient {
+    background: var(--gradient-card);
+  }
+
+  .border-glow {
+    @apply border border-primary/20;
+    box-shadow: var(--shadow-glow);
+  }
+
+  .section-container {
+    @apply max-w-6xl mx-auto px-6 py-20 md:py-32;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-foreground mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-muted-foreground text-lg max-w-2xl;
+  }
+
+  .nav-link {
+    @apply text-muted-foreground hover:text-primary transition-colors duration-300 relative;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .skill-badge {
+    @apply px-4 py-2 rounded-full text-sm font-medium border border-primary/30 text-primary bg-primary/5 hover:bg-primary/10 transition-all duration-300;
+  }
+
+  .experience-card {
+    @apply p-6 rounded-xl bg-card/50 border border-border/50 hover:border-primary/30 transition-all duration-500;
+  }
+
+  .project-card {
+    @apply relative overflow-hidden rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all duration-500;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-lg font-medium text-primary-foreground transition-all duration-300;
+    background: var(--gradient-primary);
+  }
+
+  .btn-primary:hover {
+    @apply scale-105;
+    box-shadow: var(--shadow-glow);
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-lg font-medium border border-primary text-primary hover:bg-primary/10 transition-all duration-300;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--navy-dark));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--navy-light));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.5);
+  }
+}
