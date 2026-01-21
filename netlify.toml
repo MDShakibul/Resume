@@ -3,4 +3,4 @@
   publish = "dist"
 
 [build.environment]
-  NETLIFY_NEXTJS_SKIP_PATCH = "true"
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
