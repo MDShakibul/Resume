@@ -17,10 +17,10 @@ export const experiences = [
     period: "Nov 2025 – Present",
     technologies: ["Next.js", "React", "GraphQL", "TypeScript", "Ant Design", "Tailwind CSS"],
     highlights: [
-      "Built fully responsive eCommerce storefront + admin dashboard with 20+ modules, increasing conversion by 12%",
-      "Developed Admin Panel with KPI dashboards, reducing manual reporting time by 65%",
-      "Optimized product browsing experience, improving page load time by 40%",
-      "Created 45+ reusable components, reducing UI code duplication by 30%",
+      "Built fully responsive eCommerce storefront + admin dashboard with 20+ modules, increasing conversion by 12%.",
+      "Developed Admin Panel with KPI dashboards, reducing manual reporting time by 65%.",
+      "Optimized product browsing experience, improving page load time by 40%.",
+      "Created 45+ reusable components, reducing UI code duplication by 30%.",
     ],
   },
   {
